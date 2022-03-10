@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-dark);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --bg-blue: rgba(66,225,255,1);
+    --bg-dark: #111;
+    --bg-light: #FFF;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+}
+
+.titleText {
+    color: var(--bg-light);
+    font-family: sans-serif;
+    font-size: 2rem;
+
+    
+    margin-top: 2rem;
+}
+
+.contentJournal {
+    top: 0.8rem;
+    position: relative;
+    margin-left: 1rem;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70%;
+    margin-top: 3.125rem;
+    /* background-color: aqua; */
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 9.375rem;
+    min-width: 12.5rem;
+    margin: 0px 15px 2rem 15px;
+
+    /* topo | direita | inferior | esquerda */
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--bg-light);
+    color: var(--bg-dark);
+
+
+    padding: 2rem;
+
+    transition: all 0.3s;
+
+
+}
+
+.div:hover {
+    color: var(--bg-light);
+    background: var(--bg-blue);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.exec {
+    transform: none !important;
+    background-color: var(--bg-light) !important;
+    color: var(--bg-dark) !important;
+    cursor: auto !important;
+}
+
+.contentArrow {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+
+.Arrow {
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
